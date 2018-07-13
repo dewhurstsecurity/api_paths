@@ -1,4 +1,4 @@
-# api_paths
+# API Paths List
 
 ## Ruby Script
 

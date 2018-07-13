@@ -40,5 +40,5 @@ end
 # Output paths to file
 
 out_file = File.new('api_paths.txt', 'w')
-out_file.puts(paths.uniq.join("\n"))
+out_file.puts(paths.uniq.sort.join("\n"))
 out_file.close
