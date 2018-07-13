@@ -31,7 +31,7 @@ swagger_yaml_urls.each do |swagger_yaml_url|
   if yaml_paths
     yaml_paths.each do |path|
       unless path[0].match(/\{/) or path[0].match(/Microsoft/)
-  	    paths << path[0].gsub(/\..+/, '').gsub('#', '').gsub('/api', '').gsub(/\/api\/v\d/i, '').gsub(/\/v\d/i, '')
+  	    paths << path[0].gsub(/\..+/, '').gsub('#', '').gsub(/\/api\//, '/').gsub(/\/api\/v\d/i, '').gsub(/\/v\d/i, '')
   	  end
     end
   end
